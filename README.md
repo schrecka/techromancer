@@ -1,1 +1,5 @@
 # techromancer
+
+Requirements:
+  python:
+    Watchdog
