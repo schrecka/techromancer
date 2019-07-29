@@ -7,11 +7,11 @@ from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='logger.txt', filemode='a', level=logging.INFO,
+    logging.basicConfig(filename='logger-test.txt', filemode='a', level=logging.INFO,
                         format='%(asctime)s - %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
     #CHANGE PATH to directory you want to observe
-    path = "./test_dir"
+    path = "/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test"
     # sys.argv[1] if len(sys.argv) > 1 else '.'
     event_handler = LoggingEventHandler()
     observer = Observer()

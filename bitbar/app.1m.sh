@@ -12,13 +12,17 @@
 # <bitbar.abouturl>techromancer.ml</bitbar.abouturl>
 
 #date
-
 echo "techromancer"
 echo "---"
 
 
 chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
-/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
+chmod +x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/logger-test.txt
+
+cd /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts
+
+echo "running" | bash=/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
+#/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
 
 echo "Four"
 echo "Five"

@@ -1,1 +1,9 @@
 2019-07-24 17:10:07 - Modified file: ./test_dir/test3.txt
+2019-07-29 17:38:14 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test3.txt
+2019-07-29 17:38:14 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test3.txt
+2019-07-29 17:38:14 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test3.txt
+2019-07-29 17:38:14 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test3.txt
+2019-07-29 17:38:33 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test.txt
+2019-07-29 17:38:33 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test.txt
+2019-07-29 17:38:33 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test.txt
+2019-07-29 17:38:33 - Modified file: /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/test_dir_test/test.txt
