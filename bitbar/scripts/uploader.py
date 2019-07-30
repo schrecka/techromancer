@@ -27,4 +27,6 @@ with open(read_file) as f:
 for file in list(file_changes):
     #print(file)
     storage.child("user_data").child(file).put(file.strip())
-#storage.child(user_data).put(upload_file2)
+
+
+open(read_file, "w").close()
