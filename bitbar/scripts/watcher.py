@@ -7,6 +7,9 @@ from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
 
 if __name__ == "__main__":
+    run()
+    
+def run():
     logging.basicConfig(filename='logger.txt', filemode='a', level=logging.INFO,
                         format='%(asctime)s - %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')

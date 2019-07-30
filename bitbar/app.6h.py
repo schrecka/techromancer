@@ -11,7 +11,13 @@
 # <bitbar.dependencies>fixme</bitbar.dependencies>
 # <bitbar.abouturl>techromancer.ml</bitbar.abouturl>
 
+#change path
+import sys
+sys.path.append("/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
+
 import os
+import stat
+import watcher
 from datetime import datetime, timedelta
 
 print ("techromancer")
@@ -21,5 +27,6 @@ six_hours_from_now = datetime.time(datetime.now())
 format(six_hours_from_now, '%H:%M:%S')
 print ("running ... last update at", six_hours_from_now.replace(microsecond=0), "| color=blue")
 
-os.chdir(r"/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
-os.system('python3 watcher.py')
+#st = os.stat('/scripts/logger.txt')
+# os.chmod('logger.txt', st.st_mode | stat.S_IEXEC)
+watcher.run()
