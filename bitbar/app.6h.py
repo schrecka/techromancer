@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env PYTHONIOENCODING=UTF-8 usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 #metadata
@@ -11,6 +11,15 @@
 # <bitbar.dependencies>fixme</bitbar.dependencies>
 # <bitbar.abouturl>techromancer.ml</bitbar.abouturl>
 
+import os
+from datetime import datetime, timedelta
+
 print ("techromancer")
 print ("---")
-print ("running color=blue")
+
+six_hours_from_now = datetime.time(datetime.now())
+format(six_hours_from_now, '%H:%M:%S')
+print ("running ... last update at", six_hours_from_now.replace(microsecond=0), "| color=blue")
+
+os.chdir(r"/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
+print(os.system('python3 watcher-test.py'))
