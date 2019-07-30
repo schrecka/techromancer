@@ -24,13 +24,17 @@ echo "---"
 # #/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
 #
 chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/is_open.txt
+chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/run.sh
+
 > /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/is_open.txt
+bash=/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/run.sh
 
 FONT=( 'size=14' 'font=UbuntuMono' )
-if [ 1 -eq 1 ]
+if [ -s /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/is_open.txt ]
+# if [ 1 -eq 1 ]
   then
-    echo "running | $FONT color=blue"
+    echo "error | $FONT color=blue"
   else
-    echo "error | $FONT color=red"
+    echo "running | $FONT color=red"
 fi
 echo "---"
