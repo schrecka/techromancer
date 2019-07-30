@@ -11,7 +11,7 @@ config = {
 firebase = pyrebase.initialize_app(config)
 storage = firebase.storage();
 
-read_file = "logger-test.txt"
+read_file = "logger.txt"
 file_changes = set()
 with open(read_file) as f:
     for x in f:

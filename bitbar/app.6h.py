@@ -22,4 +22,4 @@ format(six_hours_from_now, '%H:%M:%S')
 print ("running ... last update at", six_hours_from_now.replace(microsecond=0), "| color=blue")
 
 os.chdir(r"/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
-print(os.system('python3 watcher-test.py'))
+os.system('python3 watcher.py')
