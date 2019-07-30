@@ -11,19 +11,26 @@
 # <bitbar.dependencies>fixme</bitbar.dependencies>
 # <bitbar.abouturl>techromancer.ml</bitbar.abouturl>
 
-#date
 echo "techromancer"
 echo "---"
+#
+#
+# # chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
+# # chmod +x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/logger-test.txt
+# chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/run.sh
+#
+# cd /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts
+#
+# #/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
+#
+chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/is_open.txt
+> /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/is_open.txt
 
-
-chmod u+x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
-chmod +x /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/logger-test.txt
-
-cd /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts
-
-echo "running" | bash=/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
-#/usr/local/bin/python3 /Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts/watcher-test.py
-
-echo "Four"
-echo "Five"
-echo "Six"
+FONT=( 'size=14' 'font=UbuntuMono' )
+if [ 1 -eq 1 ]
+  then
+    echo "running | $FONT color=blue"
+  else
+    echo "error | $FONT color=red"
+fi
+echo "---"
