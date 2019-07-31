@@ -11,22 +11,34 @@
 # <bitbar.dependencies>fixme</bitbar.dependencies>
 # <bitbar.abouturl>techromancer.ml</bitbar.abouturl>
 
-#change path
+#change sys path to access main scripts
 import sys
 sys.path.append("/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
+#main scripts
+import watcher
+import uploader
 
 import os
 import stat
-import watcher
+import time
+import subprocess
+import pathlib
 from datetime import datetime, timedelta
 
+#allow logger.txt to be accessed
+os.chdir(r"/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
+os.chmod("logger.txt", stat.S_IRWXU)
+
+#upload past changes
+# uploader.run()
+
+#bitbar UI
 print ("techromancer")
 print ("---")
+last_update_time = datetime.time(datetime.now())
+format(last_update_time, '%H:%M:%S')
+print ("running ... last update at", last_update_time.replace(microsecond=0), "| color=blue")
+print ("uploaded to cloud | color=blue")
 
-six_hours_from_now = datetime.time(datetime.now())
-format(six_hours_from_now, '%H:%M:%S')
-print ("running ... last update at", six_hours_from_now.replace(microsecond=0), "| color=blue")
-
-#st = os.stat('/scripts/logger.txt')
-# os.chmod('logger.txt', st.st_mode | stat.S_IEXEC)
-watcher.run()
+subprocess.Popen('python3 watcher.py', shell=True, cwd="/Users/Adam/Desktop/techromancer/techromancer/bitbar/scripts")
+# watcher.run()
